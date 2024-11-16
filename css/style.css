@@ -299,6 +299,7 @@ img {
 .about__card-paragraph-text {
     color: var(--white);
     max-width: 443px;
+    font-weight: 600;
 }
 
 .about__title-three {
@@ -310,7 +311,8 @@ img {
 
 .about__card-list {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between; 
+    gap: 10px; 
 }
 
 .about__card-item {
@@ -337,6 +339,7 @@ img {
     background-repeat: no-repeat;
     background-image: url("../img/Working.png");
     background-size: cover;
+    background-position: center;
 }
 
 .about__card-right {
@@ -391,7 +394,8 @@ img {
 .stage__shape {
     display: flex;
     flex-direction: column;
-
+    max-width: 758px;
+    width: 100%;
 }
 
 .stage__title-two {
@@ -412,7 +416,7 @@ img {
 .stage__paragraph {
     margin: 0;
     margin-bottom: 18px;
-    max-width: 758px;
+    
     font-size: 16px;
     line-height: 32px;
     font-weight: 400;
@@ -461,6 +465,7 @@ img {
 .stage__image {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .stage__image:after {
@@ -490,6 +495,7 @@ img {
 .question__card {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .question__card-item {
@@ -521,15 +527,19 @@ img {
 
 /* footer */
 
-.footer__shape {
-    padding: 50px 75px;
+.footer {
     background-color: #000;
+    padding: 50px 0;
+}
+
+.footer__shape {
 }
 
 .footer__nav-shape {
     display: flex;
     flex-direction: column;
-    flex-basis: 20%;
+    max-width: 252px;
+    margin-right: 117px;
 }
 
 .footer__card {
@@ -607,7 +617,7 @@ img {
 }
 
 .footer__paragraph {
-    max-width: 363px;
+    width: 363px;
     margin: 0;
     font-size: 16px;
     font-weight: 400;
@@ -655,7 +665,6 @@ img {
     color: var(--white);
     padding: 14px 0 14px 24px;
     margin-bottom: 32px;
-    max-width: 570px;
     min-height: 150px;
     background-color: #414141;
     border: none;
@@ -683,13 +692,15 @@ img {
 .footer__form-shape {
     display: flex;
     flex-direction: column;
-    flex-basis: 35%;
     max-width: 570px;
+    width: 100%;
+    margin-right: 10px;
 }
 
 .footer__form-button {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .footer__submit {
@@ -741,7 +752,7 @@ img {
     background-repeat: no-repeat;
     transform: translateY(-50%);
     opacity: 0;
-    transition: opacity 0.3;
+    transition: transform opacity 0.3;
 }
 
 .footer__checkbox-input:checked + .footer__checkbox-label::after {
